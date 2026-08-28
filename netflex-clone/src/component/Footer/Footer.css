@@ -1,0 +1,223 @@
+/* =========================================
+   FOOTER MAIN
+========================================= */
+
+.footer {
+  width: 100%;
+  background-color: #141414;
+  color: #737373;
+
+  padding: 40px 20px 80px;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  width: 100%;
+  max-width: 980px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA ICONS
+========================================= */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+
+/* Remove list style */
+
+.social-icons li {
+  list-style: none;
+}
+
+
+/* Social links */
+
+.social-icons a {
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Hover */
+
+.social-icons a:hover {
+  color: #999999;
+}
+
+
+/* MUI icon size */
+
+.social-icons svg {
+  font-size: 24px;
+}
+
+
+/* =========================================
+   FOOTER LINKS CONTAINER
+========================================= */
+
+.footer-links {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 30px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   EACH UL
+========================================= */
+
+.footer-links ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+
+/* =========================================
+   EACH LI
+========================================= */
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER LINK
+========================================= */
+
+.footer-links a {
+  color: #737373;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Hover */
+
+.footer-links a:hover {
+  color: #ffffff;
+
+  text-decoration: underline;
+}
+
+
+
+/* =========================================
+   SERVICE CODE
+========================================= */
+
+.service-code {
+  display: inline-block;
+
+  border: 1px solid #737373;
+
+  color: #737373;
+
+  padding: 6px 10px;
+
+  font-size: 13px;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.service-code:hover {
+  color: #ffffff;
+
+  border-color: #ffffff;
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-container p {
+  color: #737373;
+
+  font-size: 11px;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .footer-links {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+
+}
